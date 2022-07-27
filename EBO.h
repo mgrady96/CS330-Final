@@ -6,16 +6,16 @@
 class EBO
 {
 public:
-	// ID reference of Elements Buffer Object
+
 	GLuint ID;
-	// Constructor that generates a Elements Buffer Object and links it to indices
+	// constructor
 	EBO(GLuint* indices, GLsizeiptr size);
 
-	// Binds the EBO
+	// Binds EBO
 	void Bind();
-	// Unbinds the EBO
+	// Unbinds EBO
 	void Unbind();
-	// Deletes the EBO
+	// Deletes EBO
 	void Delete();
 };
 

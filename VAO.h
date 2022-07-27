@@ -7,18 +7,18 @@
 class VAO
 {
 public:
-	// ID reference for the Vertex Array Object
+
 	GLuint ID;
-	// Constructor that generates a VAO ID
+
 	VAO();
 
-	// Links a VBO Attribute such as a position or color to the VAO
+	// Links
 	void LinkAttrib(VBO& VBO, GLuint layout, GLuint numComponents, GLenum type, GLsizeiptr stride, void* offset);
-	// Binds the VAO
+	// Binds
 	void Bind();
-	// Unbinds the VAO
+	// Unbinds
 	void Unbind();
-	// Deletes the VAO
+	// Deletes
 	void Delete();
 };
 
